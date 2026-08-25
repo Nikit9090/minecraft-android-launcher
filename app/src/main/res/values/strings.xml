@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minecraft Android Launcher</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Main Activity -->
+    <string name="home_title">Game Instances</string>
+    <string name="create_instance">Create Instance</string>
+    <string name="manage_mods">Manage Mods</string>
+    <string name="import_modpack">Import Modpack</string>
+    <string name="play">Play</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    
+    <!-- Instance Manager -->
+    <string name="instance_name">Instance Name</string>
+    <string name="minecraft_version">Minecraft Version</string>
+    <string name="modloader_type">Mod Loader</string>
+    <string name="none">None (Vanilla)</string>
+    <string name="forge">Forge</string>
+    <string name="fabric">Fabric</string>
+    <string name="quilt">Quilt</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    
+    <!-- Mod Manager -->
+    <string name="installed_mods">Installed Mods</string>
+    <string name="add_mod">Add Mod</string>
+    <string name="remove_mod">Remove Mod</string>
+    <string name="mod_enabled">Enabled</string>
+    <string name="mod_disabled">Disabled</string>
+    
+    <!-- Modpack Import -->
+    <string name="select_modpack">Select Modpack ZIP</string>
+    <string name="importing">Importing Modpack...</string>
+    <string name="import_success">Modpack imported successfully</string>
+    <string name="import_failed">Failed to import modpack</string>
+    
+    <!-- Download/Install -->
+    <string name="downloading">Downloading...</string>
+    <string name="installing">Installing...</string>
+    <string name="download_complete">Download complete</string>
+    <string name="launching_game">Launching game...</string>
+    
+    <!-- Errors -->
+    <string name="error_no_storage">Storage permission required</string>
+    <string name="error_invalid_file">Invalid file selected</string>
+    <string name="error_download_failed">Download failed</string>
+</resources>
