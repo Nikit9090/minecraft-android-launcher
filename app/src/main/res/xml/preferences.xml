@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Game Settings">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="auto_save"
+            android:summary="Auto-save instances"
+            android:title="Auto Save" />
+    </PreferenceCategory>
+</PreferenceScreen>

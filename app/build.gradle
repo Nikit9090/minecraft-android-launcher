@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
 }
 
 android {
@@ -22,54 +21,44 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            debuggable true
+        }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = '11'
-    }
+
     buildFeatures {
         viewBinding true
-        dataBinding true
     }
 }
 
 dependencies {
-    // Android Core
+    // Android Core Libraries
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'androidx.recyclerview:recyclerview:1.3.2'
-    implementation 'androidx.preference:preference:1.2.1'
-    
-    // Material Design
-    implementation 'com.google.android.material:material:1.10.0'
-    
-    // Lifecycle & ViewModel
-    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime:2.6.1'
-    
+    implementation 'com.google.android.material:material:1.9.0'
+
+    // RecyclerView
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+
     // Room Database
     implementation 'androidx.room:room-runtime:2.5.2'
     annotationProcessor 'androidx.room:room-compiler:2.5.2'
-    
+
     // Networking
     implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+
+    // JSON Parsing
     implementation 'com.google.code.gson:gson:2.10.1'
-    
-    // Java Edition launcher libraries
-    implementation 'org.apache.commons:commons-lang3:3.13.0'
-    implementation 'commons-io:commons-io:2.13.0'
-    implementation 'org.apache.commons:commons-compress:1.24.0'
-    
-    // File operations
-    implementation 'com.github.topjohnwu:libsu:5.2.1'
-    
-    // Image loading
-    implementation 'com.squareup.picasso:picasso:2.8'
-    
+
+    // Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.6.1'
+
     // Testing
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

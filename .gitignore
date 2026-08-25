@@ -1,0 +1,12 @@
+settings.gradle
+.gradle
+build/
+.idea/
+*.iml
+*.apk
+*.aar
+*.so
+*.so.debug
+*.json
+.DS_Store
+local.properties
